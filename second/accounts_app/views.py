@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
 
 # Create your views here.
-def Sarvin(request):
-    return HttpResponse('This is Sarvin\'s profile page.')
+def Profile(request, username):
+    return HttpResponse(f'This is {username}\'s profile page.')
